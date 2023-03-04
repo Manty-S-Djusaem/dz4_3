@@ -2,7 +2,7 @@ const btn = document.querySelector('.btn')
 
 btn.addEventListener('click', () => {
     const request = new XMLHttpRequest()
-    request.open("GET", "peoples.json")
+    request.open("GET", "main.json")
     request.setRequestHeader('Content-type', 'application/json')
     request.send()
     request.addEventListener('load', () => {
@@ -13,7 +13,7 @@ btn.addEventListener('click', () => {
             const div = document.createElement('div')
             div.setAttribute('class', 'user')
             div.innerHTML = `
-                <img src="image/avatar.jpg" alt=""
+                <img src="image/amogus.jpg" alt=""
                 <h2 class="text">Name: ${item.name}</h2>
                 <span>Age:${item.age}</span>
             `
